@@ -9,26 +9,19 @@
 	<script src="https://cdn.bootcss.com/jquery/3.3.0/jquery.min.js"></script>
 	<link rel="shortcut icon" href="https://s.pc.qq.com/tousu/img/20210611/7696533_1623393091.jpg" />
 	<link rel="apple-touch-icon" href="https://s.pc.qq.com/tousu/img/20210611/7696533_1623393091.jpg">
-	<style>
-	html,body {height: 100%;margin: 0;padding: 0;line-height:0.8;}body {font-family: 'lucida grande', 'lucida sans unicode', lucida, helvetica, 'Hiragino Sans GB', 'Microsoft YaHei', 'WenQuanYi Micro Hei', sans-serif;align-items: center;display: flex;}a{text-decoration:none;}#container {max-width: 360px;flex-basis: 100%;margin: 0 auto 50px;background: #FFF;border-radius: 10px;box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);-webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);overflow: hidden;}#container #hero-img {width: 100%;height: 110px;background: #007bff;}#container #profile-img {width: 120px;height: 120px;margin: -60px auto 0 auto;}#container #profile-img img {width: 100%;background: #FFF;border-radius: 50%;}#container #content {text-align: center;width: 350px;margin: 0 auto;padding: 0 0 50px 0;}#container #content h1 {font-size: 29px;font-weight: 500;margin: 30px 0 0 0;}#container #content p {font-size: 18px;font-weight: 400;line-height: 1.4;color: #666;margin: 15px 0 40px 0;}#container #content a {color: #CCC;font-size: 14px;margin: 0 3px;transition: color .3s ease-in-out;-webkit-transition: color .3s ease-in-out;line-height: 30px;}#container #content a:hover {color: #007bff;}.btn{background: none repeat scroll 0 0 #1BA1E2; border: 0 none; border-radius: 2px; color: #FFFFFF !important; cursor: pointer; font-family: "Open Sans","Hiragino Sans GB","Microsoft YaHei","WenQuanYi Micro Hei",Arial,Verdana,Tahoma,sans-serif; font-size: 14px;  padding: 6px 10%;}.btn:hover,.yanshibtn:hover{background: none repeat scroll 0 0 #9B59B6; border: 0 none; border-radius: 2px; color: #FFFFFF!important; cursor: pointer; font-family: "Open Sans","Hiragino Sans GB","Microsoft YaHei","WenQuanYi Micro Hei",Arial,Verdana,Tahoma,sans-serif; font-size: 14px; padding: 8px 10%;}form div {width: 100px;display: inline-grid;padding: 5px 0;height: 40px;}
-	.imgType{display: none;}
-	#images img{width: 100%}
-	#imgurl input{width: 100%;margin:5px 0;}
-	#imgurl,#progress{display: none;}
-	@-webkit-keyframes rotation{
-		from {-webkit-transform: rotate(0deg);}
-		to {-webkit-transform: rotate(360deg);}}
-	.Rotation{
-		-webkit-transform: rotate(360deg);
-		animation: rotation 3s linear infinite;
-		-moz-animation: rotation 3s linear infinite;
-		-webkit-animation: rotation 3s linear infinite;
-		-o-animation: rotation 3s linear infinite;}
-	.img{border-radius: 250px;}
-</style>
 </head>
 <body>
-请先到 <a href="https://www.baidu.com/" target="_blank">https://www.baidu.com/</a> 登录账号（已登录的请忽略），再上传图片
+<p>
+	上传必看
+清先到 <a href="https://www.baidu.com/" target="_blank">https://www.baidu.com/</a> 登录账号（已登录的请忽略），再上传图片；
+</p>
+<p>
+	上传后，如果你是Firefox浏览器可以直接解析链接，其它浏览器要手动提取返回的图片链接；
+例如
+</p>
+<pre class="prettyprint lang-html">http:\/\/imgsrc.baidu.com\/super\/pic\/item\/****************.jpg</pre>
+然后删掉 \ 号，还可以自己补全https
+最后得到 https://imgsrc.baidu.com/super/pic/item/****************.jpg 就是图片链接了。
         <form enctype="multipart/form-data" action="https://sp0.baidu.com/6_R1fD_bAAd3otqbppnN2DJv/Pic/upload?pid=super&app=skin&l&logid=3915152959" method="post">
                 <input type="file" name="file"><br/>
                 <input type="submit" value="上传">
