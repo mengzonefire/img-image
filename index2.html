@@ -1,30 +1,60 @@
 <!DOCTYPE html>
-<html lang='zh-cn'>
+<html>
 <head>
-	<meta charset='UTF-8'>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
-	<title>多合一图床上传  By 风之暇想 - Cdn图床|百度图床|阿里图床|京东图床|搜狗图床|搜狐图床|QQ图床|58图床|头条图床|网易图床|360图床|葫芦侠图床</title>
-	<meta name="keywords" content="多合一图床,Cdn图床,百度图床,阿里图床,京东图床,搜狗图床,搜狐图床,QQ图床,XKX图床,58图床,头条图床,网易图床,360图床,葫芦侠图床" />
-	<link rel='stylesheet' href='https://cdn.bootcss.com/normalize/5.0.0/normalize.min.css'>
-	<script src="https://cdn.bootcss.com/jquery/3.3.0/jquery.min.js"></script>
-	<link rel="shortcut icon" href="https://s.pc.qq.com/tousu/img/20210611/7696533_1623393091.jpg" />
-	<link rel="apple-touch-icon" href="https://s.pc.qq.com/tousu/img/20210611/7696533_1623393091.jpg">
+        <meta charset="utf-8">
+        <title>简易百度图片上传</title>
 </head>
-<body>
+<h2>
+	<span style="color:#E53333;">百度图床上传必看</span><br />
+</h2>
 <p>
-	上传必看
-清先到 <a href="https://www.baidu.com/" target="_blank">https://www.baidu.com/</a> 登录账号（已登录的请忽略），再上传图片；
+	请先到百度 <a href="https://www.baidu.com/" target="_blank"><span style="color:#337FE5;">https://www.baidu.com/</span></a> 登录账号（已登录的请忽略），再上传图片；
 </p>
 <p>
-	上传后，如果你是Firefox浏览器可以直接解析链接，其它浏览器要手动提取返回的图片链接；
-例如
+	上传后，如果你是 <strong>Firefox浏览器</strong> 可以直接解析链接，其它浏览器要手动提取返回的图片链接；
 </p>
-<pre class="prettyprint lang-html">http:\/\/imgsrc.baidu.com\/super\/pic\/item\/****************.jpg</pre>
-然后删掉 \ 号，还可以自己补全https
-最后得到 https://imgsrc.baidu.com/super/pic/item/****************.jpg 就是图片链接了。
+<h3>
+	例如
+</h3>
+<h4>
+	<p>
+		返回内容
+	</p>
+</h4>
+<pre>{"err_no":0,"err_msg":"","data":{"cur_time":null,"pic_id":"*************,"fullpic_width":***"fullpic_height":***
+"pic_type":*,"full_datalen":*****,"full_sign0":null,"full_sign1":null,"pic_id_encode":"************************************",
+"pic_desc":"email1","pic_water":"http:\/\/imgsrc.baidu.com\/super\/pic\/item\/************************************.jpg"}}
+</pre>
+<h4>
+	提取链接
+</h4>
+<pre>http:\/\/imgsrc.baidu.com\/super\/pic\/item\/************************************.jpg</pre>
+<p>
+	然后删掉 <span style="color:#E53333;">\</span> 号，还可以自己补全 <strong>https</strong> 最后得到 <span style="color:#337FE5;"><strong>https</strong>://imgsrc.baidu.com/super/pic/item/************************************.jpg</span> 就是图片链接了。
+</p>
+<h2>
+	开始上传
+</h2>
+<p>
+	点击下面的浏览文件，开始上传吧。
+</p>
+<div class="notranslate">
+</div>
+<div class="notranslate">
+</div>
         <form enctype="multipart/form-data" action="https://sp0.baidu.com/6_R1fD_bAAd3otqbppnN2DJv/Pic/upload?pid=super&app=skin&l&logid=3915152959" method="post">
                 <input type="file" name="file"><br/>
                 <input type="submit" value="上传">
         </form>
+<div id="footer" style="position:fixed;width: 100%;text-align: center;bottom: 0px;display: block;">
+		<div style="height: 20px">
+		<p style="color:#000;">您的IP:
+		<script src="https://pv.sohu.com/cityjson?ie=utf-8"></script>
+		<script>document.write(returnCitySN["cname"])</script>  
+		© 
+		<a style="text-decoration:none;" href="https://www.fzxx.xyz/">风之暇想 | </a><a style="text-decoration:none;" href="https://tmp.fzxx.xyz/">临时网盘</a>
+		</p>
+		</div>
+		</div>
 </body>
 </html>
